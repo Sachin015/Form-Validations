@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: #00000099;
+}
+
+.registration{
+    width: 650px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+}
+label{
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+input{
+    /* height: 30px; */
+    border: none;
+    outline: 1px solid rgba(27, 147, 232, 0.646);
+    background-color:rgba(27, 147, 232, 0.101);
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+::placeholder{
+    font-size: 0.93rem;
+}
+
+.username{
+    display: flex;
+    align-items: center;
+}
+/* .username label:nth-child(2){
+    padding-left: 20px;
+} */
+.username input{
+    width: 150px !important;
+    height: 30px !important;
+    border-radius: 3px !important;
+    margin: 0 14px;
+}
+#btn{
+    background-color: rgba(255, 0, 0, 0.298);
+}
+#btn:hover{
+    background-color: rgba(255, 0, 0, 0.552);
+}
+
+/* --------------for form validation------------ */
+span{
+    color: red;
+}
+
+
+
+/* ---------------media_query---------------- */
+
+
+@media only  screen and (max-width:600px){
+    input{
+        width: 400px !important;
+    }
+    .username{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .username label{
+        margin-bottom: 15px;
+    }
+    .username input{
+        margin: 0 !important;
+        width: 400px !important;
+        padding: 20px 20px;
+    }
+    .registration{
+        align-items: center;
+    }
+    .gender{
+        display: flex;
+        flex-direction: column;
+    }
+    .gender input{
+        outline: none;
+        position: relative;
+        bottom: 15px;
+    }
+}
+
+
+/* ------------for extra small----------- */
+
+
+@media only  screen and (max-width:599px) and (min-width:300px){
+    input{
+        width: 150px !important;
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+    .username{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+
+    }
+    .username input{
+        margin: 0 !important;
+        width: 150px !important;
+        padding: 5px 20px;
+    }
+    .registration{
+        width: 300px;
+        /* align-items: center; */
+    }
+    
+    label{
+        font-size: 0.97rem;
+        position: relative;
+    }
+    .gender{
+        display: flex;
+        flex-direction: column;
+    }
+    .gender input{
+        outline: none;
+        position: relative;
+        bottom: 15px;
+        left: 40px;
+    }
+    ::placeholder{
+        font-size: 0.75rem;
+    }
+}
+
+
+@media only  screen and (max-width:768px)and (min-width:600px){
+    input{
+        width: 300px !important;
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+    .username{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .username label{
+        margin-bottom: 15px;
+    }
+    .username input{
+        margin: 0 !important;
+        width: 300px !important;
+        padding: 5px 20px;
+    }
+    .registration{
+        width:500px;
+        align-items: center;
+    }
+    .gender{
+        display: flex;
+        flex-direction: column;
+    }
+    .gender input{
+        outline: none;
+        position: relative;
+        bottom: 15px;
+        left: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    input{
+        width: 300px !important;
+        padding: 12px 20px;
+        font-size: 14px;
+        align-self: center;
+    }
+    .username{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .username label{
+        margin-bottom: 15px;
+    }
+    .username input{
+        margin: 0 !important;
+        width: 300px !important;
+        padding: 20px 20px;
+    }
+    .registration{
+        width:600px;
+       
+    }
+    .registration label{
+        position: relative;
+        left: 25%;
+    }
+    .gender{
+        display: flex;
+        flex-direction: column;
+    }
+    .gender input{
+        outline: none;
+        position: relative;
+        bottom: 15px;
+        left: 40px;
+    }
+    #btn{
+        align-self: center;
+    }
+}

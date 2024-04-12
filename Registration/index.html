@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>registration form</title>
+</head>
+<body>
+    <form action="" method="" class="registration" onsubmit="return register()">
+        <br>
+        <h2>Registration Form</h2>
+        <br><br>
+       <div class="username">
+        <label for="fname">First Name:&nbsp;&nbsp;</label>
+        <input type="text" placeholder="Enter first name" id="fname"> &nbsp;&nbsp;&nbsp; &nbsp;
+        <br><br> <span id="first"></span>
+        <label for="lname">Last Name:&nbsp;&nbsp;</label>
+        <input type="text" placeholder="Enter last name" id="lname">
+        <br> <span id="last"></span>
+       </div>
+       <br>
+       <div class="gender">
+        <label for="">Gender:</label>&nbsp; &nbsp;&nbsp;
+        <label for="male">Male: &nbsp; </label>
+        <input type="checkbox" id="male"> &nbsp; 
+        <label for="female">Female: &nbsp</label>
+        <input type="checkbox" id="female">
+       </div>
+            <br>
+        <label for="address">Address:</label> <br>
+            <input type="text" id="address" placeholder="Enter your Address"> <br>
+            <span id="addr"></span>
+            <br>
+
+        <label for="DOB">Date of Birth:</label><br>
+            <input type="date" id="DOB">
+            <br><br>
+        <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter Your Email"><br>
+            <span id="mail"></span>
+            <br>
+
+        <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" placeholder="Enter Phone Number"><br>
+            <span id="contact"></span>
+            <br><br>
+        
+        
+            <input type="submit" value="Submit"  id="btn">
+          
+       
+    </form>
+
+    <script src="script.js"> </script>
+</body>
+</html>
